@@ -1,1 +1,29 @@
-<h2>This is room</h2>
+{% extends "base/main.html" %}
+{% block content %}
+<main>
+    <section id="room-name-wrapper"></section>
+    <p>Room Name: <span id="room-name"></span></p>
+    <section id="video-streams">
+
+        <div class="video-container" id="user-container-1">
+            <div class="username-wrapper"><span class="user-name">My Name</span></div>
+            <div class="video-player" id="user-1"></div>
+        </div>
+
+        <div class="video-container" id="user-container-2">
+            <div class="username-wrapper"><span class="user-name">My Name</span></div>
+            <div class="video-player" id="user-2"></div>
+        </div>
+
+        <div class="video-container" id="user-container-1">
+            <div class="username-wrapper"><span class="user-name">My Name</span></div>
+            <div class="video-player" id="user-1"></div>
+        </div>
+
+        <div class="video-container" id="user-container-1">
+            <div class="username-wrapper"><span class="user-name">My Name</span></div>
+            <div class="video-player" id="user-1"></div>
+        </div>
+    </section>
+</main>
+{% endblock %}
